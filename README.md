@@ -1,8 +1,8 @@
-## Storybook 7 - Vite/Vue3/Typescript
+# Storybook 7 - Vite/Vue3/Typescript
 
 Storybook 7 is compatible with Node LTS (18.15.0).
 
-### Webstorm
+## Webstorm
 1. Verify Node interpreter is set to Node LTS (18.15.0)
 2. Verify Node Package Manager is set to Yarn (3.5.0)
 3. Correct versions are pinned in package.json under volta
@@ -13,8 +13,9 @@ If you run into any issues on install, try running the storybook automigrate too
 npx storybook@next automigrate
 ```
 
-### Project Setup
+## Project Setup
 
+### Install dependencies
 ```sh
 yarn
 ```

@@ -1,27 +1,19 @@
-# vite-project
+## Storybook 7 - Vite/Vue3/Typescript
 
-This template should help get you started developing with Vue 3 in Vite.
+Storybook 7 is compatible with Node LTS (18.15.0).
 
-## Recommended IDE Setup
+### Webstorm
+1. Verify Node interpreter is set to Node LTS (18.15.0)
+2. Verify Node Package Manager is set to Yarn (3.5.0)
+3. Correct versions are pinned in package.json under volta
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+If you run into any issues on install, try running the storybook automigrate tool:
 
-## Type Support for `.vue` Imports in TS
+```sh
+npx storybook@next automigrate
+```
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+### Project Setup
 
 ```sh
 yarn
@@ -30,13 +22,13 @@ yarn
 ### Compile and Hot-Reload for Development
 
 ```sh
-yarn dev
+yarn storybook
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-yarn build
+yarn build-storybook
 ```
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
